@@ -1,0 +1,93 @@
+<div class="text-center mb-3">
+    <h1>PRUEBA TÉCNICA ELEMPLEO.COM</h1>
+</div>
+
+<p>Con base en las siguientes tablas realizar un CRUD maestro – detalle.</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="text-center" colspan="2">CITY</th>
+        </tr>
+        <tr>
+            <th>ID</th>
+            <th>DESCRIPTION</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="width: 150px;">1</td>
+            <td>Bogota</td>
+        </tr>
+        <tr>
+            <td style="width: 150px;">2</td>
+            <td>Cali</td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="text-center" colspan="5">SELLER</th>
+        </tr>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>LAST_NAME</th>
+            <th>DOCUMENT</th>
+            <th>CITY_ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="width: 150px;">1</td>
+            <td>Juan</td>
+            <td>Polanco</td>
+            <td>111111111</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td style="width: 150px;">1</td>
+            <td>Jessica</td>
+            <td>Reyes</td>
+            <td>222222222</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td style="width: 150px;">1</td>
+            <td>Maria</td>
+            <td>Paz</td>
+            <td>333333333</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td style="width: 150px;">1</td>
+            <td>Luna</td>
+            <td>Monrroy</td>
+            <td>444444444</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+</table>
+<p>Es necesario cumplir con los siguientes requisitos para la creación del CRUD:</p>
+<p style="font-weight: bold;">Backend</p>
+<ul>
+    <li>Debe ser construido en c# .net 5.</li>
+    <li>Las funciones crud (insertar, eliminar, modificar, seleccionar) deben hacerse a través de una apirest.</li>
+    <li>La base de datos a usar debe ser sql server.</li>
+    <li>Usar ORM como EntityFramework o Nhibernate para el acceso a datos.</li>
+    <li>Usar mínimo un patrón de diseño.</li>
+    <li>Realizar el montaje de la solución en un contenedor Docker.</li>
+</ul>
+<p style="font-weight: bold;">Frontend</p>
+<ul>
+    <li>Realizar el consumo de los servicios del lado cliente usando alguna librería o framework como Angular, Svelte, Vue, React, Jquery o el de su preferencia.</li>
+
+</ul>
+<p style="font-weight: bold;">Utilities</p>
+<ul>
+    <li>Compartí el desarrollo de la actividad a través de un repositorio de código fuente tales como GitHub, GitLab, Bitbucket o el de su preferencia.</li>
+    <li>Realizar el montaje de las soluciones con Docker (Opcional).</li>
+
+</ul>

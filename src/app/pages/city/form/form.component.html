@@ -1,0 +1,13 @@
+<h1>{{ id == '' ? 'Nueva Ciudad' : 'Editar Ciudad' }}</h1>
+<form [formGroup]="form">
+    <div class="mb-3">
+      <label for="city" class="form-label">Ciudad</label>
+      <input type="text" class="form-control" id="city" placeholder="Nombre de la ciudad" formControlName="description">
+      <div class="form-text invalid-input" *ngIf="description?.errors?.['required'] && description?.touched">*Este campo
+        es obligatorio</div>
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-secondary mx-1" [routerLink]="['/ciudades']">Volver</button>
+        <button type="submit" class="btn btn-primary  mx-1" (click)="submit()">Guardar</button>
+    </div>    
+  </form>
