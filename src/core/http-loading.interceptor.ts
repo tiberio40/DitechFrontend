@@ -45,6 +45,13 @@ export class HttpLoadingInterceptor implements HttpInterceptor {
           'error'
         );
       }
+      if (err.status == 0) {
+        Swal.fire(
+          'Atención!',
+          'No se pudo establecer una conexión con el backend',
+          'error'
+        );
+      }
       
       //const error = err.error || err.statusText;
       return throwError(err);
