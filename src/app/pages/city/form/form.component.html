@@ -1,7 +1,7 @@
 <h1>{{ id == '' ? 'Nueva Ciudad' : 'Editar Ciudad' }}</h1>
 <form [formGroup]="form">
     <div class="mb-3">
-      <label for="city" class="form-label">Ciudad</label>
+      <label for="city" class="form-label">Nombre</label>
       <input type="text" class="form-control" id="city" placeholder="Nombre de la ciudad" formControlName="description">
       <div class="form-text invalid-input" *ngIf="description?.errors?.['required'] && description?.touched">*Este campo
         es obligatorio</div>
